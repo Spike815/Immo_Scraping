@@ -14,5 +14,8 @@ def get_house_info(url):
     s = requests.Session()
     house_info = s.get(url)
     soup = BeautifulSoup(house_info.text, "html.parser")
-
+    house_info={}
+    for elem in soup.find_all('div', attrs={'class':"classified__information--address"}):
+      print(elem)
+        
 get_house_info(root_url)
