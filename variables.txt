@@ -1,0 +1,2 @@
+root_url = "https://www.immoweb.be/"
+status_url = "https://www.immoweb.be/status"
