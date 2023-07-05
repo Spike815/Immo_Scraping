@@ -5,3 +5,4 @@ Immo_Scraping_Env
 test.py
 test.ipynb
 sachinovitch.ipynb
+__pycache__
