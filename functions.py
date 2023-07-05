@@ -137,15 +137,15 @@ def get_house_info(url,session):
    except: 
       house_info['state of the building'] = 0
 
-   # for k in house_info:
-   #    if house_info[k] == False:
-   #       house_info[k] == 0
-   #    elif house_info[k] == None:
-   #       house_info[k] = 0
-   #    elif house_info[k] == True:
-   #       house_info[k] = 1
-   #    else:
-   #       pass
+   for k in house_info:
+      if house_info[k] == False:
+         house_info[k] == 0
+      elif house_info[k] == None:
+         house_info[k] = 0
+      elif house_info[k] == True:
+         house_info[k] = 1
+      else:
+         pass
          
    return house_info
 
