@@ -48,7 +48,15 @@ def get_house_info(url,session):
       house_info['locality'] = properties['location']['locality']
    except:
       house_info['locality'] = 0
-
+   try:
+      house_info["province"] = properties['location']['province']
+   except:
+      house_info['province'] = 0
+   try:
+      house_info['postalCode']= properties['location']['postalCode']
+   except:
+      house_info['postalCode']
+      
    try:
       house_info['price'] = script_text_dict['price']['mainValue']
    except:
@@ -129,15 +137,15 @@ def get_house_info(url,session):
    except: 
       house_info['state of the building'] = 0
 
-   for k in house_info:
-      if house_info[k] == False:
-         house_info[k] == 0
-      elif house_info[k] == None:
-         house_info[k] = 0
-      elif house_info[k] == True:
-         house_info[k] = 1
-      else:
-         pass
+   # for k in house_info:
+   #    if house_info[k] == False:
+   #       house_info[k] == 0
+   #    elif house_info[k] == None:
+   #       house_info[k] = 0
+   #    elif house_info[k] == True:
+   #       house_info[k] = 1
+   #    else:
+   #       pass
          
    return house_info
 
