@@ -1,4 +1,4 @@
-## Immo_Scraping
+## Immo Scraping
 #### *A property scraping project in Python 3.11 by Bo Cao, Sacha Schreuer & George Hollingdale*
 ***
 ## Description
